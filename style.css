@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+}
+
+section{
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+section h1{
+    color: rgb(126, 210, 0);
+    font-size: 35pt;
+}
+
+section input{
+    width: 80%;
+    padding: 4px 7px;
+    margin: 8px;
+    background-color: transparent;
+    border: 3px solid black;
+    font-size: 14pt;
+    outline: none;
+    color: rgb(126, 210, 0);
+    border-radius: 5px;
+}
+
+section input:focus{
+    border: 3px solid rgb(126, 210, 0);
+    transition: 0.3s;
+}
+
+section button{
+    width: 50%;
+    margin: 8px;
+    padding: 7px 4px;
+    font-size: 13pt;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    border: 3px solid rgb(10, 10, 10);
+    color: rgb(126, 210, 0);
+}
+
+section button:hover{
+    background-color: rgb(126, 210, 0);
+    border: 3px solid rgb(81, 135, 0);
+    color: rgb(52, 52, 52);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+section p{
+    color: rgb(126, 210, 0);
+    margin: 15px;
+    font-size: 16pt;
+}
+
+@media (min-width:1101px) {
+    section{
+        width: 40%;
+    }
+    .opinar{
+        max-width: 200px;
+    }
+}
+
+@media (max-width:1100px) {
+    @media (min-width:591px){
+        section{
+            width: 65%;
+        }
+        .opinar{
+            max-width: 200px;
+        }
+    }
+}
+
+@media (max-width:590px) {
+    section{
+        width: 85%;
+    }
+}
+
+.opinar{
+    background-color: white;
+    padding: 7px 12px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.opinar a{
+    color: rgb(0, 0, 183);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13pt;
+}
